@@ -4,6 +4,9 @@
 (function () {
 
     var $owl = $('.owl-carousel');
+    var $grid = $('.grid').isotope({
+        itemSelector: '.grid-item'
+    });
 
     $owl.eq(0).owlCarousel({
         items:1,
@@ -29,27 +32,17 @@
     });
 
     $image = $('.image');
-    var success = false;
 
     $.getJSON("http://api.pixplorer.co.uk/image?&amount=7&size=tb", function (data) {
         console.log(data);
         for (var i = 0; i < data.images.length; i++) {
             $image.eq(i).attr({"src": data.images[i].imageurl, "alt": data.images[i].word});
         }
-        success = true;
-    });
 
-    if(success) {
-        $('.grid').isotope({
-            // set itemSelector so .grid-sizer is not used in layout
-            itemSelector: '.grid-item',
-            percentPosition: true,
-            masonry: {
-                // use element for option
-                columnWidth: '.grid-sizer'
-            }
+        $grid.imagesLoaded().progress( function() {
+            $grid.isotope('layout');
         });
-    }
+    });
 
     function search(word){
         $.getJSON("http://api.pixplorer.co.uk/image?word=" + word + "&amount=7&size=tb", function (data) {
@@ -64,12 +57,8 @@
         $word =  $('#search').val();
         console.log($word);
         search($word);
-        success = true;
-        if(success){$('.grid').isotope({
-            // set itemSelector so .grid-sizer is not used in layout
-            itemSelector: '.grid-item',
-            percentPosition: true
+        $grid.imagesLoaded().progress( function() {
+            $grid.isotope('layout');
         });
-        }
     });
 })();

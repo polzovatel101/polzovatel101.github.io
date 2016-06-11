@@ -308,17 +308,19 @@ form {
   margin: auto; }
 
 .line {
+  position: absolute;
+  margin: 100px 0;
   width: 100%;
-  border-top: 3px solid #ff4e50; }
+  border-top: 3px solid #ff4e50;
+  left: 0; }
 
 .footer {
-  position: relative;
-  padding: 40px 0 35px; }
+  padding: 35px 0 40px;
+  position: relative; }
 
 .company {
   display: inline-block;
   width: 240px;
-  margin-left: 250px;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   color: #ff4e50;
@@ -329,7 +331,7 @@ form {
 
 .footer img {
   position: absolute;
-  right: 250px;
+  right: 0;
   top: 40px; }
 
 .footer--head {
@@ -345,7 +347,7 @@ form {
 
 .footer--item {
   display: block;
-  margin-left: 593px;
+  margin-left: 343px;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   color: #666666;
@@ -359,13 +361,40 @@ form {
   position: relative;
   margin: 20px; }
 
-.grid-item {
-  display: inline-block;
-  width: auto; }
+.grid-item img {
+  width: 100%;
+  height: 100%; }
 
 .clear-fix:after {
   content: "";
   display: block;
   clear: both; }
+
+/*------------- 768px -------------*/
+@media screen and (max-width: 1070px) {
+  body {
+    background-size: auto;
+    background-position: top; }
+
+  .container {
+    width: 750px;
+    margin: 0 auto; }
+
+  .logo {
+    margin-left: 47px; }
+
+  .header h4 {
+    left: 145px; }
+  .header h6 {
+    left: 180px; }
+
+  .find__partner {
+    left: 270px; }
+
+  .main--head {
+    margin-left: 245px; }
+
+  .owl-carousel {
+    width: 235px; } }
 
 /*# sourceMappingURL=style.css.map */
