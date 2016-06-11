@@ -140,31 +140,13 @@ $iconPosition: -41px;
     }
 
     .work--third{
-        background-image: url("../img/work3.jpg");
-    }
+            background-image: url("../img/work3.jpg");
+        }
 
     .sliders{
-        margin: 0 auto;
-        padding: 40px 0 100px 0;
-    }
-
-    .arrow{
-        display: block;
-        position: absolute;
-        top: 150px;
-        width: 30px;
-        height: 55px;
-        background-image: url("../img/slide.png");
-    }
-
-    .left {
-        left: 20px;
-    }
-
-    .right {
-        right: 20px;
-        background-position: -31px 0;
-    }
+            margin: 0 auto;
+            padding: 40px 0 100px 0;
+        }
 
     .step {
         display: block;
@@ -182,63 +164,6 @@ $iconPosition: -41px;
         line-height: 1.2;
     }
 
-    .work--second .step {
-        bottom: 120px;
-    }
-
-    .work--head {
-        display: block;
-        position: absolute;
-        bottom: 84px;
-        width: 195px;
-        font-size: 24px;
-        font-family: $Montserrat;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        line-height: 1.2;
-    }
-
-    .work--text {
-        display: block;
-        position: absolute;
-        bottom: 20px;
-        width: 260px;
-        font-size: 14px;
-        font-family: $Roboto;
-        color: rgb(204, 204, 204);
-        line-height: 1.2;
-    }
-
-    .partners {
-        float: left;
-        position: relative;
-        width: 220px;
-        margin: 100px 15px;
-    }
-
-    .partners img {
-        display: block;
-        margin: 0 auto;
-        border-radius: 60px;
-    }
-
-    .partners a{
-        display: block;
-        width: 110px;
-        margin: 0 auto;
-    }
-
-    .partners a span{
-        display: block;
-        margin: 20px auto;
-        font-size: 14px;
-        font-family: $Montserrat;
-        color: rgb(51, 51, 51);
-        font-weight: bold;
-        line-height: 1.2;
-        text-align: center;
-    }
-
     .meet__partner {
         display: block;
         margin-left: 270px;
@@ -248,6 +173,63 @@ $iconPosition: -41px;
         font-weight: bold;
         line-height: 1.2;
     }
+
+    .work--second .step {
+            bottom: 120px;
+        }
+
+    .work--head {
+            display: block;
+            position: absolute;
+            bottom: 84px;
+            width: 195px;
+            font-size: 24px;
+            font-family: $Montserrat;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+    .work--text {
+            display: block;
+            position: absolute;
+            bottom: 20px;
+            width: 260px;
+            font-size: 14px;
+            font-family: $Roboto;
+            color: rgb(204, 204, 204);
+            line-height: 1.2;
+        }
+
+    .feedback_partners {
+            float: left;
+            position: relative;
+            width: 220px;
+            margin: 100px 15px;
+        }
+
+    .feedback_partners img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 60px;
+        }
+
+    .feedback_partners a{
+            display: block;
+            width: 110px;
+            margin: 0 auto;
+        }
+
+    .feedback_partners a span{
+            display: block;
+            margin: 20px auto;
+            font-size: 14px;
+            font-family: $Montserrat;
+            color: rgb(51, 51, 51);
+            font-weight: bold;
+            line-height: 1.2;
+            text-align: center;
+        }
 
     .icon {
         position: absolute;
@@ -271,7 +253,7 @@ $iconPosition: -41px;
         background-position: $iconPosition*3;
     }
 
-    .partners__phrase{
+    .feedback_partners--phrase{
         display: block;
         margin: 20px auto;
         font-size: 14px;
@@ -281,7 +263,7 @@ $iconPosition: -41px;
         text-align: center;
     }
 
-    .partners--other {
+    .feedback_partners--other {
         display: block;
         clear: both;
         width: 195px;
@@ -369,10 +351,8 @@ $iconPosition: -41px;
         position: relative;
     }
 
-    .company{
+    .footer--company{
         display: inline-block;
-        width: 240px;
-        //margin-left: 250px;
         font-size: 16px;
         font-family: $Montserrat;
         color: rgb(255, 78, 80);
@@ -390,8 +370,7 @@ $iconPosition: -41px;
 
     .footer--head{
         display: inline-block;
-        width: 160px;
-        margin-left: 100px;
+        margin-left: 95px;
         font-size: 14px;
         font-family: $Montserrat;
         color: rgb(51, 51, 51);
@@ -402,7 +381,7 @@ $iconPosition: -41px;
 
     .footer--item{
         display: block;
-        margin-left: 343px;
+        margin-left: 233px;
         font-size: 14px;
         font-family: $Roboto;
         color: rgb(102, 102, 102);
@@ -436,6 +415,7 @@ $iconPosition: -41px;
         body{
             background-size: auto;
             background-position: top;
+            overflow: auto;
         }
 
         .container{
@@ -461,15 +441,55 @@ $iconPosition: -41px;
            left: 270px;
         }
 
+        .main{
+            overflow: hidden;
+            width: auto;
+        }
+
         .main--head{
             margin-left: 245px;
         }
 
-        .owl-carousel{
-            width: 235px;
+        .sliders .owl-carousel{
+            width: 234px;
         }
 
+        .no_right_margin{
+            margin: 0;
+        }
 
+        .meet__partner{
+            margin-left: 180px;
+        }
+
+        .feedback{
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .feedback_partners{
+            margin: 25px 15px;
+        }
+
+        .feedback_partners--other{
+            margin: 35px auto 100px;
+        }
+
+        .footer--company{
+            margin-left: 40px;
+        }
+
+        .footer img{
+            right: 40px;
+        }
+
+        .footer--head{
+            margin-left: 85px;
+        }
+
+        .footer--item{
+            margin-left: 263px;
+        }
     }
 
 
