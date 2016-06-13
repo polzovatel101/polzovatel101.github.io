@@ -349,7 +349,19 @@ form {
 
 .grid-item img {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  border-radius: 5px; }
+
+.grid-item span {
+  top: 30%;
+  left: 10%;
+  position: absolute;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  color: #ff4e50;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center; }
 
 .clear-fix:after {
   content: "";

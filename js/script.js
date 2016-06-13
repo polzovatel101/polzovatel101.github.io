@@ -36,7 +36,7 @@
     $.getJSON("http://api.pixplorer.co.uk/image?&amount=7&size=tb", function (data) {
         console.log(data);
         for (var i = 0; i < data.images.length; i++) {
-            $image.eq(i).attr({"src": data.images[i].imageurl, "alt": data.images[i].word});
+            $image.eq(i).attr({"src": data.images[i].imageurl, "alt": data.images[i].word}).next().html(data.images[i].word);
         }
 
         $grid.imagesLoaded().progress( function() {
@@ -48,7 +48,7 @@
         $.getJSON("http://api.pixplorer.co.uk/image?word=" + word + "&amount=7&size=tb", function (data) {
         console.log(data);
         for(var i = 0; i < data.images.length; i++){
-            $image.eq(i).attr({"src": data.images[i].imageurl, "alt": data.images[i].word });
+            $image.eq(i).attr({"src": data.images[i].imageurl, "alt": data.images[i].word}).next().html(data.images[i].word);
         }
     })}
 
