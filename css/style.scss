@@ -7,6 +7,7 @@ $iconPosition: -41px;
     }
 
     body{
+        position: relative;
         background: url("../img/header.jpg") no-repeat;
         background-size: 100% 700px;
     }
@@ -337,68 +338,68 @@ $iconPosition: -41px;
         margin: auto;
     }
 
-    .line{
-        position: absolute;
-        margin: 100px 0;
-        width: 100%;
-        border-top: 3px solid rgb(255, 78, 80);
-        left: 0;
-    }
 
-    .footer{
-        padding: 35px 0 40px;
-        position: relative;
-    }
+.footer{
+    padding: 35px 0 40px;
+    position: relative;
+}
 
-    .footer--company{
-        display: inline-block;
-        font-size: 16px;
-        font-family: $Montserrat;
-        color: rgb(255, 78, 80);
-        font-weight: bold;
-        text-transform: uppercase;
-        line-height: 1.2;
-        text-align: center;
-    }
+.footer--company{
+    display: inline-block;
+    font-size: 16px;
+    font-family: $Montserrat;
+    color: rgb(255, 78, 80);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
 
-    .footer img{
-        position: absolute;
-        right: 0;
-        top: 40px;
-    }
+.footer img{
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
 
-    .footer--head{
-        display: inline-block;
-        margin-left: 95px;
-        font-size: 14px;
-        font-family: $Montserrat;
-        color: rgb(51, 51, 51);
-        font-weight: bold;
-        line-height: 1.2;
-        text-align: left;
-    }
+.footer--head{
+    display: inline-block;
+    margin-left: 95px;
+    font-size: 14px;
+    font-family: $Montserrat;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
 
-    .footer ul{
-        width: 70px;
-        margin-left: 233px;
-    }
+.footer ul{
+    width: 70px;
+    margin-left: 233px;
+}
 
-    .footer--item{
-        display: block;
-        font-size: 14px;
-        font-family: $Roboto;
-        color: rgb(102, 102, 102);
-        line-height: 1.714;
-        text-align: left;
-    }
+.footer--item{
+    display: block;
+    font-size: 14px;
+    font-family: $Roboto;
+    color: rgb(102, 102, 102);
+    line-height: 1.714;
+    text-align: left;
+}
 
-    .owl-carousel{
-        margin-right: 20px;
-    }
+.line{
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    border-top: 3px solid rgb(255, 78, 80);
+}
 
-    .grid{
-        position: relative;
-        margin: 20px;
+.owl-carousel{
+    margin-right: 20px;
+}
+
+.grid{
+    position: relative;
+    margin: 20px;
     }
 
     .grid-item img{

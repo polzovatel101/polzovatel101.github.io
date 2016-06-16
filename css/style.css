@@ -2,6 +2,7 @@
   box-sizing: border-box; }
 
 body {
+  position: relative;
   background: url("../img/header.jpg") no-repeat;
   background-size: 100% 700px; }
 
@@ -292,13 +293,6 @@ form {
   text-align: center;
   margin: auto; }
 
-.line {
-  position: absolute;
-  margin: 100px 0;
-  width: 100%;
-  border-top: 3px solid #ff4e50;
-  left: 0; }
-
 .footer {
   padding: 35px 0 40px;
   position: relative; }
@@ -339,6 +333,12 @@ form {
   color: #666666;
   line-height: 1.714;
   text-align: left; }
+
+.line {
+  position: absolute;
+  bottom: 200px;
+  width: 100%;
+  border-top: 3px solid #ff4e50; }
 
 .owl-carousel {
   margin-right: 20px; }

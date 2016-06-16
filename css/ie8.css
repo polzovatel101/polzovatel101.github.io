@@ -298,10 +298,9 @@ form {
 
 .line {
   position: absolute;
-  margin: 100px 0;
+  bottom: 200px;
   width: 100%;
-  border-top: 3px solid #ff4e50;
-  left: 0; }
+  border-top: 3px solid rgb(255, 78, 80); }
 
 .footer {
   padding: 35px 0 40px;
