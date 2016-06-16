@@ -75,7 +75,7 @@ body {
   position: absolute;
   top: 425px;
   left: 362px;
-  width: 255px;
+  width: 225px;
   height: 40px;
   padding: 12px 22px;
   font-size: 14px;
@@ -124,8 +124,9 @@ body {
   margin: 0 auto;
   padding: 40px 0 100px 0; }
 
-.autoHeightClass{
-  display: block;  }
+.owl-carousel .autoHeightClass{
+  display: block;
+  width: auto}
 
 .step {
   display: block;
