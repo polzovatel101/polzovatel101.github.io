@@ -125,8 +125,7 @@ body {
   padding: 40px 0 100px 0; }
 
 .autoHeightClass{
-  display: inline-block;
-}
+  display: block;  }
 
 .step {
   display: block;
