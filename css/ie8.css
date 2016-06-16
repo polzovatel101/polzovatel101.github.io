@@ -124,7 +124,7 @@ body {
   margin: 0 auto;
   padding: 40px 0 100px 0; }
 
-.owl-carousel .autoHeightClass{
+.owl-carousel .item .autoHeightClass{
   display: block;
   width: auto}
 
