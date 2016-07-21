@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  background: url("../img/header.jpg") no-repeat;
+  background: url("../img/header-min.jpg") no-repeat;
   background-size: 100% 700px; }
 
 .container {
@@ -112,13 +112,13 @@ body {
   background-size: 100%; }
 
 .work--first {
-  background-image: url("../img/work1.jpg"); }
+  background-image: url("../img/work1-min.jpg"); }
 
 .work--second {
-  background-image: url("../img/work2.jpg"); }
+  background-image: url("../img/work2-min.jpg"); }
 
 .work--third {
-  background-image: url("../img/work3.jpg"); }
+  background-image: url("../img/work3-min.jpg"); }
 
 .sliders {
   margin: 0 auto;
@@ -208,7 +208,7 @@ body {
   right: 50px;
   width: 40px;
   height: 40px;
-  background-image: url("../img/spriteIcon.png"); }
+  background-image: url("../img/spriteIcon-min.png"); }
 
 .icon--second {
   background-position: -41px; }

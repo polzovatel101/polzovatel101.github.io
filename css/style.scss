@@ -8,7 +8,7 @@ $iconPosition: -41px;
 
     body{
         position: relative;
-        background: url("../img/header.jpg") no-repeat;
+        background: url("../img/header-min.jpg") no-repeat;
         background-size: 100% 700px;
     }
 
@@ -133,15 +133,15 @@ $iconPosition: -41px;
     }
 
     .work--first {
-        background-image: url("../img/work1.jpg");
+        background-image: url("../img/work1-min.jpg");
     }
 
     .work--second {
-        background-image: url("../img/work2.jpg");
+        background-image: url("../img/work2-min.jpg");
     }
 
     .work--third{
-            background-image: url("../img/work3.jpg");
+            background-image: url("../img/work3-min.jpg");
         }
 
     .sliders{
@@ -238,7 +238,7 @@ $iconPosition: -41px;
         right: 50px;
         width: 40px;
         height: 40px;
-        background-image: url("../img/spriteIcon.png");
+        background-image: url("../img/spriteIcon-min.png");
     }
 
     .icon--second{
@@ -425,6 +425,8 @@ $iconPosition: -41px;
         display: block;
         clear: both;
     }
+
+
 
     /*------------- 768px -------------*/
     @media screen and (max-width: 1070px) {
