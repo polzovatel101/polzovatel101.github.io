@@ -18,11 +18,11 @@
 
 <body>
 <div class="flexbox__parent">
-  <div class="flexbox__children"><span class="flexbox__text">Block with some text</span></div>
-  <div class="flexbox__children"><span class="flexbox__text">Block with some text</span></div>
-  <div class="flexbox__children"><span class="flexbox__text">Block with some text</span></div>
-  <div class="flexbox__children"><span class="flexbox__text">Block with some text</span></div>
-  <div class="flexbox__children"><span class="flexbox__text">Block with some text</span></div>
+  <div class="flexbox__children"><span class="flexbox__text">Flexbox for Eugene 1</span></div>
+  <div class="flexbox__children"><span class="flexbox__text">Flexbox for Eugene 2</span></div>
+  <div class="flexbox__children selected-box"><span class="flexbox__text">Flexbox for Eugene 3</span></div>
+  <div class="flexbox__children"><span class="flexbox__text">Flexbox for Eugene 4</span></div>
+  <div class="flexbox__children"><span class="flexbox__text">Flexbox for Eugene 5</span></div>
 </div>
 <div class="settings__wrapper">
   <ul class="settings__list">
@@ -30,20 +30,20 @@
       <form>
         <ul class="settings__list">
           <li class="settings__item"><label>flex-start
-            <input id="align-start" name="align-item" type="radio">
+            <input id="align flex-start" name="align-items" type="radio">
           </label>
           </li>
           <li class="settings__item"><label>flex-end
-            <input id="align-end" name="align-item" type="radio">
+            <input id="align flex-end" name="align-items" type="radio">
           </label></li>
           <li class="settings__item"><label>center
-            <input id="align-center" name="align-item" type="radio">
+            <input id="align center" name="align-items" type="radio">
           </label></li>
           <li class="settings__item"><label>baseline
-            <input id="align-baseline" name="align-item" type="radio">
+            <input id="align baseline" name="align-items" type="radio">
           </label></li>
           <li class="settings__item"><label>stretch
-            <input id="align-stretch" name="align-item" type="radio">
+            <input id="align stretch" name="align-items" type="radio">
           </label></li>
         </ul>
       </form>
@@ -51,20 +51,20 @@
     <li class="settings__item">Justify content<details>
       <ul class="settings__list">
         <li class="settings__item"><label>flex-start
-          <input id="justify-start" name="justify-content" type="radio">
+          <input id="justify flex-start" name="justify-content" type="radio">
         </label>
         </li>
         <li class="settings__item"><label>flex-end
-          <input id="justify-end" name="justify-content" type="radio">
+          <input id="justify flex-end" name="justify-content" type="radio">
         </label></li>
         <li class="settings__item"><label>center
-          <input id="justify-center" name="justify-content" type="radio">
+          <input id="justify center" name="justify-content" type="radio">
         </label></li>
-        <li class="settings__item"><label>baseline
-          <input id="justify-baseline" name="justify-content" type="radio">
+        <li class="settings__item"><label>space-between
+          <input id="justify space-between" name="justify-content" type="radio">
         </label></li>
-        <li class="settings__item"><label>stretch
-          <input id="justify-stretch" name="justify-content" type="radio">
+        <li class="settings__item"><label>space-around
+          <input id="justify space-around" name="justify-content" type="radio">
         </label></li>
       </ul>
       </details></li>
@@ -72,20 +72,23 @@
       <form>
         <ul class="settings__list">
           <li class="settings__item"><label>flex-start
-            <input id="align-content-start" name="align-content" type="radio">
+            <input id="align-content flex-start" name="align-content" type="radio">
           </label>
           </li>
           <li class="settings__item"><label>flex-end
-            <input id="align-content-end" name="align-content" type="radio">
+            <input id="align-content flex-end" name="align-content" type="radio">
           </label></li>
           <li class="settings__item"><label>center
-            <input id="align-content-center" name="align-content" type="radio">
+            <input id="align-content center" name="align-content" type="radio">
           </label></li>
-          <li class="settings__item"><label>baseline
-            <input id="align-content-baseline" name="align-content" type="radio">
+          <li class="settings__item"><label>space-between
+            <input id="align-content space-between" name="align-content" type="radio">
+          </label></li>
+          <li class="settings__item"><label>space-around
+            <input id="align-content space-around" name="align-content" type="radio">
           </label></li>
           <li class="settings__item"><label>stretch
-            <input id="align-content-stretch" name="align-content" type="radio">
+            <input id="align-content stretch" name="align-content" type="radio">
           </label></li>
         </ul>
       </form>
@@ -94,20 +97,20 @@
       <form>
         <ul class="settings__list">
           <li class="settings__item"><label>flex-start
-            <input id="align-self-start" name="align-self" type="radio">
+            <input id="align-self flex-start" class="for-child" name="align-self" type="radio">
           </label>
           </li>
           <li class="settings__item"><label>flex-end
-            <input id="align-self-end" name="align-self" type="radio">
+            <input id="align-self flex-end" class="for-child" name="align-self" type="radio">
           </label></li>
           <li class="settings__item"><label>center
-            <input id="align-self-center" name="align-self" type="radio">
+            <input id="align-self center" class="for-child" name="align-self" type="radio">
           </label></li>
           <li class="settings__item"><label>baseline
-            <input id="align-self-baseline" name="align-self" type="radio">
+            <input id="align-self baseline" class="for-child" name="align-self" type="radio">
           </label></li>
           <li class="settings__item"><label>stretch
-            <input id="align-self-stretch" name="align-self" type="radio">
+            <input id="align-self stretch" class="for-child" name="align-self" type="radio">
           </label></li>
         </ul>
       </form>
@@ -116,17 +119,17 @@
       <form>
         <ul class="settings__list">
           <li class="settings__item"><label>row
-            <input id="direction-row" name="direction" type="radio">
+            <input id="direction row" name="flex-direction" type="radio">
           </label>
           </li>
           <li class="settings__item"><label>row-reverse
-            <input id="direction-row-reverse" name="direction" type="radio">
+            <input id="direction row-reverse" name="flex-direction" type="radio">
           </label></li>
           <li class="settings__item"><label>column
-            <input id="direction-column" name="direction" type="radio">
+            <input id="direction column" name="flex-direction" type="radio">
           </label></li>
           <li class="settings__item"><label>column-reverse
-            <input id="ddirection-column-reverse" name="direction" type="radio">
+            <input id="direction column-reverse" name="flex-direction" type="radio">
           </label></li>
         </ul>
       </form>
@@ -135,14 +138,14 @@
       <form>
           <ul class="settings__list">
           <li class="settings__item"><label>no-wrap
-            <input id="no-wrap" name="wrap" type="radio">
+            <input id="flex-wrap no-wrap" name="flex-wrap" type="radio">
           </label>
           </li>
           <li class="settings__item"><label>wrap
-            <input id="wrap" name="wrap" type="radio">
+            <input id="flex-wrap wrap" name="flex-wrap" type="radio">
           </label></li>
           <li class="settings__item"><label>wrap-reverse
-            <input id="wrap-reverse" name="wrap" type="radio">
+            <input id="flex-wrap wrap-reverse" name="flex-wrap" type="radio">
           </label></li>
         </ul>
       </form>
@@ -151,17 +154,17 @@
       <form>
         <ul class="settings__list">
           <li class="settings__item"><label>row nowrap
-            <input id="row_nowrap" name="flow" type="radio">
+            <input id="row nowrap" class="for-child" name="flex-flow" type="radio">
           </label>
           </li>
           <li class="settings__item"><label>column-reverse
-            <input id="column-reverse" name="flow" type="radio">
+            <input id="column reverse" class="for-child" name="flex-flow" type="radio">
           </label></li>
           <li class="settings__item"><label>column wrap
-            <input id="column_wrap" name="flow" type="radio">
+            <input id="column wrap" class="for-child" name="flex-flow" type="radio">
           </label></li>
           <li class="settings__item"><label>row-reverse wrap-reverse
-            <input id="row-reverse_wrap-reverse" name="flow" type="radio">
+            <input id="row-reverse wrap-reverse" class="for-child" name="flex-flow" type="radio">
           </label></li>
         </ul>
       </form>
@@ -170,54 +173,54 @@
       <form>
         <ul class="settings__list">
           <li class="settings__item"><label>-1
-            <input id="order-1" name="order" type="radio">
+            <input id="order -1" class="for-child" name="order" type="radio">
           </label>
           </li>
           <li class="settings__item"><label>0
-            <input id="order-0" name="order" type="radio">
+            <input id="order 0" class="for-child" name="order" type="radio">
           </label></li>
           <li class="settings__item"><label>1
-            <input id="order+1" name="order" type="radio">
+            <input id="order 1" class="for-child" name="order" type="radio">
           </label></li>
         </ul>
       </form>
     </details></li>
-    <li class="settings__item">flex-grow<details>
+    <li class="settings__item">Flex-grow<details>
       <form>
         <ul class="settings__list">
           <li class="settings__item"><label>0
-            <input id="flex-grow-0" name="flex-grow" type="radio">
+            <input id="flex-grow 0" class="for-child" name="flex-grow" type="radio">
           </label></li>
           <li class="settings__item"><label>1
-            <input id="flex-grow+1" name="flex-grow" type="radio">
+            <input id="flex-grow 1" class="for-child" name="flex-grow" type="radio">
           </label></li>
         </ul>
       </form>
     </details></li>
-    <li class="settings__item">flex-shrink<details>
+    <li class="settings__item">Flex-shrink<details>
       <form>
         <ul class="settings__list">
           <li class="settings__item"><label>0
-            <input id="flex-shrink-0" name="flex-shrink" type="radio">
+            <input id="flex-shrink 0" name="flex-shrink" type="radio">
           </label></li>
           <li class="settings__item"><label>1
-            <input id="flex-shrink+1" name="flex-shrink" type="radio">
+            <input id="flex-shrink 1" name="flex-shrink" type="radio">
           </label></li>
         </ul>
       </form>
     </details></li>
-    <li class="settings__item">flex-basis<details>
+    <li class="settings__item">Flex-basis<details>
       <form>
         <ul class="settings__list">
           <li class="settings__item"><label>30%
-            <input id="flex-basis-30" name="flex-basis" type="radio">
+            <input id="flex-basis 30%" class="for-child" name="flex-basis" type="radio">
           </label>
           </li>
           <li class="settings__item"><label>50%
-            <input id="flex-basis-50" name="flex-basis" type="radio">
+            <input id="flex-basis 50%" class="for-child" name="flex-basis" type="radio">
           </label></li>
           <li class="settings__item"><label>content
-            <input id="flex-basis-content" name="flex-basis" type="radio">
+            <input id="flex-basis content" class="for-child" name="flex-basis" type="radio">
           </label></li>
         </ul>
       </form>
@@ -226,7 +229,7 @@
 </div>
 </body>
 
-<script defer src="js/vendor/jquery-3.3.1.min.js"></script>
-<script defer src="js/main.js"></script>
+<script src="js/vendor/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
 
 </html>
