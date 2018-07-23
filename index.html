@@ -1,143 +1,232 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Final Test</title>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.min.css">
-    <!--[if IE 8]><link href="css/ie8.css" rel="stylesheet"><![endif]-->
-    <link rel="shortcut icon" href="/img/holiday.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <div class="header">
-                <span class="logo">URLAUBSGLÜCK</span>
-                <div class="log__in">
-                    <a href="#" id="log__in--log">Log in</a>
-                    <a href="#" id="log__in--sign">Sign up</a>
-                </div>
-                <h4>Share your Holiday dreams</h4>
-                <h6>And find the perfect partner to fullfill it</h6>
-                <a href="#" class="find__partner">Find your holiday partner</a>
-            </div>
-        </header>
-        <main>
-            <div class="main">
-                <span class="main--head">How Urlaubsglück works?</span>
-                <div class="sliders">
-                    <div class="owl-carousel">
-                        <img src="img/work1-min.jpg" alt="" class="item autoHeightClass" id="ie8_block1">
-                        <img src="img/work2-min.jpg" alt="" class="item">
-                        <img src="img/work3-min.jpg" alt="" class="item">
-                    </div>
-                    <div class="owl-carousel">
-                        <img src="img/work1-min.jpg" alt="" class="item autoHeightClass">
-                        <img src="img/work2-min.jpg" alt="" class="item"  id="ie8_block2">
-                        <img src="img/work3-min.jpg" alt="" class="item">
-                    </div>
-                    <div class="owl-carousel no_right_margin">
-                        <img src="img/work1-min.jpg" alt="" class="item autoHeightClass">
-                        <img src="img/work2-min.jpg" alt="" class="item">
-                        <img src="img/work3-min.jpg" alt="" class="item"  id="ie8_block3">
-                    </div>
-                </div>
-            <span class="meet__partner">Meet a partner for your best holiday</span>
-                <div class="feedback">
-                    <div class="feedback_partners">
-                        <a href="#">
-                            <img src="img/partner4-min.jpg" alt="partner">
-                            <span>Bradley Hunter</span>
-                        </a>
-                        <div class="icon"></div>
-                        <span class="feedback_partners--phrase">Based in Chicago. I love playing tennis and loud music.</span>
-                    </div>
-                    <div class="feedback_partners">
-                        <a href="#">
-                            <img src="img/partner3-min.jpg" alt="partner">
-                            <span>Heather Walker</span>
-                        </a>
-                        <div class="icon icon--second"></div>
-                        <span class="feedback_partners--phrase">I'm a happy person that loves cats and climbing on mountains.</span>
-                    </div>
-                    <div class="feedback_partners">
-                        <a href="#">
-                            <img src="img/partner2-min.jpg" alt="partner">
-                            <span>Lucas Marsha</span>
-                        </a>
-                        <div class="icon icon--third"></div>
-                        <span class="feedback_partners--phrase">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</span>
-                    </div>
-                    <div class="feedback_partners clear-fix">
-                        <a href="#">
-                            <img src="img/partner1-min.jpg" alt="partner">
-                            <span>Bradley Hunter</span>
-                        </a>
-                        <div class="icon icon--four"></div>
-                        <span class="feedback_partners--phrase">Based in Chicago. I love playing tennis and loud music.</span>
-                    </div>
-                </div>
-            <a href="#" class="feedback_partners--other">See other partners</a>
-                <span class="holiday">Discover holiday activity ideas</span>
-                <div id="image__box">
-                    <div class="grid">
-                        <div class="grid-item">
-                            <img src="" alt="" class="image">
-                            <span></span>
-                        </div>
-                        <div class="grid-item">
-                            <img src="" alt="" class="image">
-                            <span></span>
-                        </div>
-                        <div class="grid-item">
-                            <img src="" alt="" class="image">
-                            <span></span>
-                        </div>
-                        <div class="grid-item">
-                            <img src="" alt="" class="image">
-                            <span></span>
-                        </div>
-                        <div class="grid-item">
-                            <img src="" alt="" class="image">
-                            <span></span>
-                        </div>
-                        <div class="grid-item">
-                            <img src="" alt="" class="image">
-                            <span></span>
-                        </div>
-                        <div class="grid-item">
-                            <img src="" alt="" class="image">
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-                <span class="holiday">Discover holiday activity ideas</span>
-                <span class="holiday--interest">Hi! What are your holiday interests?</span>
-                <form action="#">
-                    <input type="text" id="search" placeholder="Enter your interests">
-                    <button type="button" id="button"><a href="#image__box">Search partners</a></button>
-                </form>
-            </div>
-        </main>
-        <footer>
-            <div class="footer">
-                <a href="#" class="footer--company">URLAUBSGLÜCK</a>
-                <a href="#" class="footer--head">Company</a>
-                <a href="#" class="footer--head">Partners</a>
-                <ul>
-                    <li class="footer--item"><a href="#">About</a></li>
-                    <li class="footer--item"><a href="#">Contacts</a></li>
-                    <li class="footer--item"><a href="#">Press</a></li>
-                    <li class="footer--item"><a href="#">Blog</a></li>
-                </ul>
-                <img src="img/areto-min.png" alt="">
-            </div>
-        </footer>
-    </div>
-    <div class="line"></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/script.min.js"></script>
+<div class="flexbox__parent">
+  <div class="flexbox__children"><span class="flexbox__text">Block with some text</span></div>
+  <div class="flexbox__children"><span class="flexbox__text">Block with some text</span></div>
+  <div class="flexbox__children"><span class="flexbox__text">Block with some text</span></div>
+  <div class="flexbox__children"><span class="flexbox__text">Block with some text</span></div>
+  <div class="flexbox__children"><span class="flexbox__text">Block with some text</span></div>
+</div>
+<div class="settings__wrapper">
+  <ul class="settings__list">
+    <li class="settings__item">Align item<details>
+      <form>
+        <ul class="settings__list">
+          <li class="settings__item"><label>flex-start
+            <input id="align-start" name="align-item" type="radio">
+          </label>
+          </li>
+          <li class="settings__item"><label>flex-end
+            <input id="align-end" name="align-item" type="radio">
+          </label></li>
+          <li class="settings__item"><label>center
+            <input id="align-center" name="align-item" type="radio">
+          </label></li>
+          <li class="settings__item"><label>baseline
+            <input id="align-baseline" name="align-item" type="radio">
+          </label></li>
+          <li class="settings__item"><label>stretch
+            <input id="align-stretch" name="align-item" type="radio">
+          </label></li>
+        </ul>
+      </form>
+    </details></li>
+    <li class="settings__item">Justify content<details>
+      <ul class="settings__list">
+        <li class="settings__item"><label>flex-start
+          <input id="justify-start" name="justify-content" type="radio">
+        </label>
+        </li>
+        <li class="settings__item"><label>flex-end
+          <input id="justify-end" name="justify-content" type="radio">
+        </label></li>
+        <li class="settings__item"><label>center
+          <input id="justify-center" name="justify-content" type="radio">
+        </label></li>
+        <li class="settings__item"><label>baseline
+          <input id="justify-baseline" name="justify-content" type="radio">
+        </label></li>
+        <li class="settings__item"><label>stretch
+          <input id="justify-stretch" name="justify-content" type="radio">
+        </label></li>
+      </ul>
+      </details></li>
+    <li class="settings__item">Align content<details>
+      <form>
+        <ul class="settings__list">
+          <li class="settings__item"><label>flex-start
+            <input id="align-content-start" name="align-content" type="radio">
+          </label>
+          </li>
+          <li class="settings__item"><label>flex-end
+            <input id="align-content-end" name="align-content" type="radio">
+          </label></li>
+          <li class="settings__item"><label>center
+            <input id="align-content-center" name="align-content" type="radio">
+          </label></li>
+          <li class="settings__item"><label>baseline
+            <input id="align-content-baseline" name="align-content" type="radio">
+          </label></li>
+          <li class="settings__item"><label>stretch
+            <input id="align-content-stretch" name="align-content" type="radio">
+          </label></li>
+        </ul>
+      </form>
+      </details></li>
+    <li class="settings__item">Align self<details>
+      <form>
+        <ul class="settings__list">
+          <li class="settings__item"><label>flex-start
+            <input id="align-self-start" name="align-self" type="radio">
+          </label>
+          </li>
+          <li class="settings__item"><label>flex-end
+            <input id="align-self-end" name="align-self" type="radio">
+          </label></li>
+          <li class="settings__item"><label>center
+            <input id="align-self-center" name="align-self" type="radio">
+          </label></li>
+          <li class="settings__item"><label>baseline
+            <input id="align-self-baseline" name="align-self" type="radio">
+          </label></li>
+          <li class="settings__item"><label>stretch
+            <input id="align-self-stretch" name="align-self" type="radio">
+          </label></li>
+        </ul>
+      </form>
+      </details></li>
+    <li class="settings__item">Flex direction<details>
+      <form>
+        <ul class="settings__list">
+          <li class="settings__item"><label>row
+            <input id="direction-row" name="direction" type="radio">
+          </label>
+          </li>
+          <li class="settings__item"><label>row-reverse
+            <input id="direction-row-reverse" name="direction" type="radio">
+          </label></li>
+          <li class="settings__item"><label>column
+            <input id="direction-column" name="direction" type="radio">
+          </label></li>
+          <li class="settings__item"><label>column-reverse
+            <input id="ddirection-column-reverse" name="direction" type="radio">
+          </label></li>
+        </ul>
+      </form>
+      </details></li>
+    <li class="settings__item">Flex wrap<details>
+      <form>
+          <ul class="settings__list">
+          <li class="settings__item"><label>no-wrap
+            <input id="no-wrap" name="wrap" type="radio">
+          </label>
+          </li>
+          <li class="settings__item"><label>wrap
+            <input id="wrap" name="wrap" type="radio">
+          </label></li>
+          <li class="settings__item"><label>wrap-reverse
+            <input id="wrap-reverse" name="wrap" type="radio">
+          </label></li>
+        </ul>
+      </form>
+      </details></li>
+    <li class="settings__item">Flex flow<details>
+      <form>
+        <ul class="settings__list">
+          <li class="settings__item"><label>row nowrap
+            <input id="row_nowrap" name="flow" type="radio">
+          </label>
+          </li>
+          <li class="settings__item"><label>column-reverse
+            <input id="column-reverse" name="flow" type="radio">
+          </label></li>
+          <li class="settings__item"><label>column wrap
+            <input id="column_wrap" name="flow" type="radio">
+          </label></li>
+          <li class="settings__item"><label>row-reverse wrap-reverse
+            <input id="row-reverse_wrap-reverse" name="flow" type="radio">
+          </label></li>
+        </ul>
+      </form>
+    </details></li>
+    <li class="settings__item">Order<details>
+      <form>
+        <ul class="settings__list">
+          <li class="settings__item"><label>-1
+            <input id="order-1" name="order" type="radio">
+          </label>
+          </li>
+          <li class="settings__item"><label>0
+            <input id="order-0" name="order" type="radio">
+          </label></li>
+          <li class="settings__item"><label>1
+            <input id="order+1" name="order" type="radio">
+          </label></li>
+        </ul>
+      </form>
+    </details></li>
+    <li class="settings__item">flex-grow<details>
+      <form>
+        <ul class="settings__list">
+          <li class="settings__item"><label>0
+            <input id="flex-grow-0" name="flex-grow" type="radio">
+          </label></li>
+          <li class="settings__item"><label>1
+            <input id="flex-grow+1" name="flex-grow" type="radio">
+          </label></li>
+        </ul>
+      </form>
+    </details></li>
+    <li class="settings__item">flex-shrink<details>
+      <form>
+        <ul class="settings__list">
+          <li class="settings__item"><label>0
+            <input id="flex-shrink-0" name="flex-shrink" type="radio">
+          </label></li>
+          <li class="settings__item"><label>1
+            <input id="flex-shrink+1" name="flex-shrink" type="radio">
+          </label></li>
+        </ul>
+      </form>
+    </details></li>
+    <li class="settings__item">flex-basis<details>
+      <form>
+        <ul class="settings__list">
+          <li class="settings__item"><label>30%
+            <input id="flex-basis-30" name="flex-basis" type="radio">
+          </label>
+          </li>
+          <li class="settings__item"><label>50%
+            <input id="flex-basis-50" name="flex-basis" type="radio">
+          </label></li>
+          <li class="settings__item"><label>content
+            <input id="flex-basis-content" name="flex-basis" type="radio">
+          </label></li>
+        </ul>
+      </form>
+    </details></li>
+  </ul>
+</div>
 </body>
+
+<script defer src="js/vendor/jquery-3.3.1.min.js"></script>
+<script defer src="js/main.js"></script>
+
 </html>
